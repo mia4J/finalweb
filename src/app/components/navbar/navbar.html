@@ -1,0 +1,22 @@
+<nav class="navbar">
+
+ 
+  <div class="logo">
+    <img src="logo.png">
+    <h2><b>Explore Camlon</b></h2>
+  </div>
+
+ 
+  <div class="menutoggle" (click)="toggleMenu()">
+    ☰
+  </div>
+
+  <ul class="navlinks" [class.active]="menuOpen">
+  <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+  <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+  <li><a routerLink="/places" routerLinkActive="active">Places</a></li>
+  <li><a routerLink="/funfacts" routerLinkActive="active">Fun Facts</a></li>
+  <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
+  </ul>
+
+</nav>

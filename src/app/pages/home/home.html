@@ -1,0 +1,82 @@
+
+<app-navbar></app-navbar>
+<section class="hero">
+
+  <div class="herocontent">
+
+    <h1>Welcome to Explore Camanlangan</h1>
+    <p>Discover the beauty and hidden gems of Barangay Camanlangan</p>
+
+    
+    <div class="weatherbox">
+
+  <h3>🌤 Weather in Camanlangan</h3>
+
+  <p *ngIf="weather">
+    {{ weather.main.temp | number:'1.0-0' }}°C
+  </p>
+
+  <p *ngIf="weather">
+    {{ weather.weather[0].description }}
+  </p>
+
+  <img *ngIf="weather"
+       [src]="'https://openweathermap.org/img/wn/' + weather.weather[0].icon + '@2x.png'">
+
+  <p *ngIf="!weather">Loading...</p>
+
+</div>
+
+    <a routerLink="/places" class="btn">Explore Places</a>
+
+  </div>
+
+</section>
+
+
+
+<section class="funfacts">
+
+  <h2>Fun Facts</h2>
+
+  <div class="facts">
+
+    <div class="fact"><a routerLink="/funfacts">🌿 Rich natural resources</a></div>
+    <div class="fact"><a routerLink="/funfacts">🏞 Scenic mountain views</a></div> 
+    <div class="fact"><a routerLink="/funfacts">🤝 Friendly community</a></div>
+
+  </div>
+
+</section>
+
+<div class="diagonalDivider">
+
+  <div class="layer1"></div>
+   <div class="layer2"></div>
+</div>
+
+<section class="places">
+
+  <h2>Places to Visit</h2>
+
+  <div class="placesgrid">
+
+    <div class="place">
+      <img src="place1.jpg">
+      <p>Mountain View</p>
+    </div>
+
+    <div class="place">
+      <img src="place2.jpg">
+      <p>Serenity Pool Retreat</p>
+    </div>
+
+    <div class="place">
+      <img src="place3.jpg">
+      <p>Home of Young Learners</p>
+    </div>
+
+  </div>
+
+</section>
+<app-footer></app-footer>

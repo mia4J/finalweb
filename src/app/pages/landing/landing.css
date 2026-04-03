@@ -1,0 +1,89 @@
+
+.landing{
+height:100vh;
+background-image: url("../../../assets/images/landing-BG.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+margin-top: -100px;
+}
+
+
+.overlay{
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+
+.landingcontent{
+color:white;
+max-width:800px;
+padding:20px;
+}
+
+
+.landingcontent h1{
+font-size:50px;
+margin-bottom:15px;
+}
+
+
+.landingcontent p{
+font-size:18px;
+margin-bottom:25px;
+line-height:1.5;
+}
+
+
+.btn{
+display:inline-block;
+background:#2f855a;
+color:white;
+padding:12px 25px;
+border-radius:6px;
+text-decoration:none;
+margin-right:10px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#276749;
+transform:scale(1.05);
+}
+
+
+.btnoutline{
+display:inline-block;
+border:2px solid white;
+color:white;
+padding:12px 25px;
+border-radius:6px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btnoutline:hover{
+background:white;
+color:black;
+}
+
+
+@media (max-width:768px){
+
+.landing-content h1{
+font-size:30px;
+}
+
+.landing-content p{
+font-size:14px;
+}
+
+.btn, .btn-outline{
+display:block;
+margin:10px auto;
+}
+
+}

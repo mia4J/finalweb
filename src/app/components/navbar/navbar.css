@@ -1,0 +1,102 @@
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background-color: rgba(71, 80, 74, 0.2);
+color:white;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.navlinks a{
+text-decoration:none;
+color:white;
+transition:0.3s;
+padding:5px 0;
+}
+
+
+.navlinks a.active{
+color:#000000; 
+border-bottom:2px solid #746e8d;
+font-weight:600;
+}
+.navlinks a:hover{
+            color: blue;
+        }
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo img{
+height:45px;
+}
+
+.logo h2{
+
+ font-family: "Luckiest Guy", cursive;
+ color: #000;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 22px;
+
+}
+
+.navlinks{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+.navlinks a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:0.3s;
+}
+
+.navlinks a:hover{
+color:#c6f6d5;
+}
+
+.menutoggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+
+@media (max-width:768px){
+
+
+.menutoggle{
+display:block;
+}
+
+
+.navlinks{
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+background:#2f855a;
+flex-direction:column;
+align-items:center;
+gap:15px;
+padding:20px;
+display:none;
+}
+
+
+.navlinks.active{
+display:flex;
+}
+
+}
+

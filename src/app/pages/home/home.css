@@ -1,0 +1,164 @@
+
+.hero{
+height:100vh;
+background:url("../../../assets/images/homepage.png") center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+position:relative;
+margin-top: -100px;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.4);
+}
+
+.herocontent{
+position:relative;
+z-index:2;
+max-width:800px;
+padding:20px;
+}
+
+
+.hero h1{
+font-family: 'Playfair Display', serif;
+font-size:45px;
+margin-bottom:10px;
+}
+
+.hero p{
+margin-bottom:20px;
+}
+
+
+.weatherbox{
+background:rgba(255,255,255,0.2);
+backdrop-filter:blur(10px);
+padding:15px;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+
+.btn{
+background:#2f855a;
+color:white;
+padding:12px 25px;
+border-radius:5px;
+text-decoration:none;
+}
+
+
+.aboutpreview{
+padding:60px 20px;
+text-align:center;
+background:rgb(167, 200, 173);
+}
+
+
+.funfacts{
+background:beige;
+padding:60px 20px;
+text-align:center;
+}
+
+.funfacts h2{
+   color: rgb(0, 0, 0);
+   font-size: 50px;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.facts{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.fact{
+ width: 250px;
+padding: 35px;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    font-size: 35px;
+    display: block;
+    margin-bottom: 15px;
+    background-color: #a8e7ae;
+}
+.fact a{
+text-decoration:none;
+color:inherit;
+}
+
+
+.places{
+padding:60px 20px;
+text-align:center;
+background-color: beige;
+}
+.places h2{
+    color:rgb(0, 0, 0);
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.placesgrid{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+gap:20px;
+}
+
+.place p{
+    margin-top: 10px;
+    font-size: 25px;
+    color: #000000;
+}
+
+.place img{
+width:100%;
+border-radius:10px;
+}
+
+.diagonalDivider{
+    overflow: hidden;
+    background: #f7f4df;
+}
+
+.layer1{
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    background: #d9efd2;
+    clip-path: polygon(0 70%, 100% 20%, 100% 100%, 0 100%);
+    bottom: 0;
+}
+
+.layer2{
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    background: #b7d9b2;
+    clip-path: polygon(0 100%, 100% 40%, 100% 100%);
+    bottom: 0;
+    opacity: 0.6;
+}
+
+
+@media (max-width:768px){
+
+.hero h1{
+font-size:28px;
+}
+
+.facts{
+flex-direction:column;
+}
+
+}

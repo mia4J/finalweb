@@ -1,0 +1,80 @@
+
+.registerPage{
+height:100vh;
+background: url("../../../assets/images/landing-BG.jpg") center/cover no-repeat;
+position:relative;
+}
+
+
+.overlay{
+background: rgba(0,0,0,0.5);
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.register{
+background: rgba(255,255,255,0.15);
+backdrop-filter: blur(10px);
+padding:40px;
+border-radius:10px;
+width:320px;
+text-align:center;
+color:rgb(255, 255, 255);
+font-size: 15px;
+}
+
+.register h2{
+margin-bottom:10px;
+}
+
+.register input{
+width:100%;
+padding:10px;
+margin-bottom:15px;
+border:none;
+border-radius:5px;
+outline:none;
+}
+
+
+.register button{
+width:100%;
+padding:10px;
+background:#2f855a;
+color:rgb(255, 255, 255);
+border:none;
+border-radius:5px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.register button:hover{
+background:#276749;
+}
+
+
+.loginlink{
+margin-top:15px;
+font-size:14px;
+color: rgb(0, 0, 0);
+}
+
+.loginlink button:hover{
+    color:#000000;
+}
+
+.loginlink a{
+color:#90cdf4;
+text-decoration:none;
+}
+
+@media (max-width:768px){
+
+.register{
+width:90%;
+padding:30px;
+}
+
+}
