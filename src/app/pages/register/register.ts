@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
   selector: 'app-register',
   imports: [RouterModule],
   templateUrl: './register.html',
+  standalone: true,
   styleUrl: './register.css',
 })
 export class RegisterComponent {}

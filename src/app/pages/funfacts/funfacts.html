@@ -8,39 +8,36 @@
 </section>
 
 <section class="history-section">
-
-  <div class="history">
+  <a class="history" [routerLink]="['/funfact-detail', 'origin']">
     <h2>Origin of Camanlangan</h2>
     <p>
       Barangay Camanlangan is known for its rich forests, mountain landscapes,
-      and peaceful environment. The place became known because of its beautiful
-      natural scenery and welcoming local community.
+      and peaceful environment.
     </p>
-  </div>
+  </a>
 
-  <div class="history">
+  <a class="history-card" [routerLink]="['/funfact-detail', 'nature']">
     <h2>Nature and Mountains</h2>
     <p>
       The barangay is surrounded by mountains and green forests, making it one
-      of the hidden eco-tourism gems in New Bataan, Davao de Oro.
+      of the hidden eco-tourism gems.
     </p>
-  </div>
+  </a>
 
-  <div class="history">
-    <h2> Local Culture</h2>
+  <a class="history" [routerLink]="['/funfact-detail', 'culture']">
+    <h2>Local Culture</h2>
     <p>
       Camanlangan celebrates local traditions through community gatherings,
       farming festivals, and nature appreciation activities.
     </p>
-  </div>
+  </a>
 
-  <div class="history">
-    <h2> Fun Fact</h2>
+  <a class="history" [routerLink]="['/funfact-detail', 'funfact']">
+    <h2>Fun Fact</h2>
     <p>
       Many visitors are amazed by the cool weather, scenic mountain views,
-      and peaceful atmosphere that make Camanlangan perfect for relaxation.
+      and peaceful atmosphere.
     </p>
-  </div>
-
+  </a>
 </section>
 <app-footer></app-footer>

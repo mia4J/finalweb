@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+
+<section class="place-detail-modern">
+  <!-- LEFT SIDE TEXT -->
+  <div class="detail-content">
+    <h1>{{ content.title }}</h1>
+
+    <p class="main-description">
+      {{ content.description }}
+    </p>
+
+    <div class="info-block">
+      <h2>📍 Highlight</h2>
+      <p>{{ content.highlight }}</p>
+    </div>
+
+    <div class="info-block">
+      <h2>📖 Story</h2>
+      <p>{{ content.story }}</p>
+    </div>
+  </div>
+
+  <!-- RIGHT IMAGE -->
+  <div class="detail-visual">
+    <img [src]="content.image" [alt]="content.title">
+  </div>
+</section>
+
+<app-footer></app-footer>

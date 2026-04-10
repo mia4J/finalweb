@@ -76,3 +76,9 @@ padding:30px;
 }
 
 }
+
+.error{
+  margin-top: 12px;
+  color: #ffb3b3;
+  font-size: 14px;
+}

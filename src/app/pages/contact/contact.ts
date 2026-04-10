@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-contact',
   imports: [Navbar,Footer,RouterModule],
+  standalone: true,
   templateUrl: './contact.html',
   styleUrl: './contact.css',
 })

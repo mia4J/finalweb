@@ -29,29 +29,42 @@ gap:25px;
 }
 
 
-.history-card{
-background:rgb(196, 227, 203);
-padding:25px;
-border-radius:50px;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
-transition:0.3s;
-}
+
 
 .history-card:hover{
 transform:translateY(-5px);
 }
 
-.history-card h2{
-margin-bottom:15px;
-color:#2f855a;
+
+/* =========================
+   CLICKABLE FACT CARDS FIX
+========================= */
+.history-section a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
-.history-card p{
-line-height:1.7;
-color:#444;
+
+.history,
+.history-card {
+    background:rgb(145, 193, 161);
+padding:25px;
+border-radius:50px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+transition:0.3s;
+  text-decoration: none;
+  color: #111;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-/* 📱 MOBILE */
+.history:hover,
+.history-card:hover {
+  transform: translateY(-6px);
+}
+
+
 @media (max-width:768px){
 .history-hero{
 height:220px;

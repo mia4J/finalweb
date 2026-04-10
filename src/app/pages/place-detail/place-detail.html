@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+
+<section class="detail-split">
+  <!-- LEFT TEXT -->
+  <div class="detail-text">
+    <h1>{{ place.title }}</h1>
+
+    <p>{{ place.description }}</p>
+
+    <div class="info-group">
+      <h3>📍 Location</h3>
+      <p>{{ place.location }}</p>
+    </div>
+
+    <div class="info-group">
+      <h3>📖 History</h3>
+      <p>{{ place.history }}</p>
+    </div>
+
+    <div class="info-group">
+      <h3>🌤 Best Time to Visit</h3>
+      <p>{{ place.bestTime }}</p>
+    </div>
+  </div>
+
+  <!-- RIGHT IMAGE -->
+  <div class="detail-image">
+    <img [src]="place.image" [alt]="place.title">
+  </div>
+</section>
+
+<app-footer></app-footer>
